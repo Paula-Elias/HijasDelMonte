@@ -1,0 +1,30 @@
+
+/** Main **/
+
+.fraseInspiradora {
+    font-size: 1.6rem;
+    font-style: italic;
+    padding: 0 20px 20px 20px;
+    margin: 0 20px 20px 20px;
+    justify-content: center;
+}
+
+.producto img, .servicio img  {
+    filter: grayscale(1);
+    transition: all .5s ease-in-out;
+}
+
+.producto img:hover, .servicio img:hover {
+filter: grayscale(0);
+transform: scale(1.1);
+}
+
+
+/* Seccion Nosotros*/
+
+blockquote {
+border: 5px #009C08 solid;
+padding: 20px;
+margin: 20px;
+border-radius: 2rem;
+}

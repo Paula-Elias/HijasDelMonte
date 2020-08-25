@@ -1,0 +1,52 @@
+/* Seccion PRODUCTOS*/
+
+.imagenProducto {
+    background-image: url(../media/living\ 2\ PS.png);
+    background-position: center center;
+    background-size: cover;
+    height: 20rem;
+    display: flex;
+    align-items: center; 
+}
+
+.contenidoProducto {
+ font-family: 'Museo 700';
+ font-size: 1.8rem;
+flex: 0 0 95%; 
+  color: #009C08;
+  text-align: center;
+}
+
+.contenidoProducto p {
+background-color: #ffffff;
+background-size: cover;
+filter: opacity(70%);
+margin: 5px;
+padding: 5px;
+}
+
+.texto {
+    font-family: 'Museo 300';
+    font-size: 1.5rem; 
+    margin: 20px;
+padding: 20px;
+justify-content: space-evenly;
+}
+
+
+.SeccionProductos {
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+}
+
+.SeccionProductos div {
+    width: 50%;
+}
+
+.SeccionProductos img {
+    width: 300px; 
+    height: 300px;
+}
