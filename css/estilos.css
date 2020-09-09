@@ -1,14 +1,15 @@
 .nav {
   justify-content: center; }
 
-.navegacion a:hover {
+.navegacion a:hover, .nav-link:hover {
+  color: #ffffff;
   background-color: #000000;
   text-transform: none;
   text-decoration: none; }
 
 /* NAVEGACION */
 .navegacion {
-  font-family: 'Museo 300';
+  font-family: 'Pridi', serif;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -19,13 +20,17 @@
   text-transform: none;
   padding: 10px; }
 
+@media (max-width: 600px) {
+  .navFooter {
+    display: none;
+    justify-content: center; } }
 footer a,
 .barraNavegacion2 a {
-  font-family: 'museo 300';
+  font-family: 'Pridi', serif;
   text-decoration: none;
   text-transform: none;
   color: white;
-  font-size: 1.0rem;
+  font-size: 1rem;
   background-color: #009C08;
   margin: 2px;
   padding: 8px; }
@@ -33,11 +38,11 @@ footer a,
 .iconos {
   text-decoration: none;
   text-transform: none;
-  margin: 3px;
-  padding: 6px;
-  font-family: "Museo 300";
-  color: #009C08;
-  font-size: 1.8rem;
+  margin: 1px;
+  padding: 1px;
+  font-family: 'Pridi', serif;
+  color: #ffffff;
+  font-size: 1.5rem;
   text-decoration: none;
   text-transform: none; }
 
@@ -63,17 +68,26 @@ img {
   padding: 0 20px 20px 20px;
   margin: 20px; }
 
+@media (max-width: 500px) {
+  img {
+    padding: 0%;
+    margin: 0%; }
+
+  h1, h2, h3, h4, h5 {
+    width: 100%;
+    padding: 0%;
+    margin: 0%; } }
 h1 {
   font-family: 'Museo 700';
   font-size: 5rem !important;
   color: #009C08;
   text-decoration: none;
   text-transform: none;
-  padding: 20px;
-  margin: 20px; }
+  padding: 15px;
+  margin: 10px; }
 
 h2 {
-  font-size: 2.0rem !important;
+  font-size: 3rem !important;
   font-family: 'Museo 700';
   color: #009C08;
   text-decoration: none;
@@ -83,12 +97,12 @@ h2 {
 
 h3 {
   font-family: 'Museo 700';
-  font-size: 2.5 0rem;
-  color: #FFFFFF;
+  font-size: 2rem;
+  color: #ffffff;
+  background-color: #009C08;
   text-decoration: none;
-  padding: 8px;
-  margin: 8px;
-  text-decoration: none;
+  padding: 6px;
+  margin: 6px;
   text-transform: none; }
 
 h4 {
@@ -100,8 +114,8 @@ h4 {
   margin: 10px; }
 
 h5 {
-  font-family: 'Museo 700';
-  font-size: 1.8rem;
+  font-family: 'Pridi', serif;
+  font-size: 1.6rem;
   color: #009C08;
   background-color: #ffffff;
   padding: 10px;
@@ -110,19 +124,15 @@ h5 {
 .container-fluid {
   max-width: 95%;
   height: 95%;
-  padding: 10px;
-  margin: 10px;
   justify-content: space-between;
   text-align: center; }
 
-.nav {
-  justify-content: center; }
+@media (max-width: 500px) {
+  .container-fluid {
+    max-width: 95%; }
 
-.navegacion a:hover {
-  background-color: #000000;
-  text-transform: none;
-  text-decoration: none; }
-
+  body {
+    max-width: 90%; } }
 /** Main **/
 .fraseInspiradora {
   font-size: 1.6rem;
@@ -131,6 +141,11 @@ h5 {
   margin: 0 20px 20px 20px;
   justify-content: center; }
 
+@media (max-width: 500px) {
+  .fraseInspiradora {
+    font-size: 0.8rem;
+    padding: 1rem;
+    margin: 1rem; } }
 .producto img, .servicio img {
   filter: grayscale(1);
   transition: all .5s ease-in-out; }
@@ -138,6 +153,40 @@ h5 {
 .producto img:hover, .servicio img:hover {
   filter: grayscale(0);
   transform: scale(1.1); }
+
+.carousel-caption {
+  filter: opacity(80%); }
+
+@media (max-width: 500px) {
+  .carousel-caption, .float, .my-float {
+    display: none; }
+
+  .d-flex {
+    flex-direction: column;
+    padding: 0rem;
+    margin: 0rem;
+    flex-wrap: wrap; } }
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100; }
+
+.float:hover {
+  text-decoration: none;
+  color: #25d366;
+  background-color: #fff; }
+
+.my-float {
+  margin-top: 16px; }
 
 /* Seccion Nosotros*/
 blockquote {
@@ -164,60 +213,115 @@ blockquote {
 
 .contenidoProducto p {
   background-color: #ffffff;
-  background-size: cover;
+  background-size: 95%;
   filter: opacity(70%);
   margin: 5px;
   padding: 5px; }
 
 .texto {
-  font-family: 'Museo 300';
-  font-size: 1.5rem;
-  margin: 20px;
-  padding: 20px;
+  font-family: 'Pridi', serif;
+  font-size: 1rem;
+  margin: 15px;
+  padding: 15px;
   justify-content: space-evenly; }
 
 .SeccionProductos {
-  padding: 20px;
-  margin: 20px;
+  padding: 15px;
+  margin: 15px;
   display: flex;
   flex-flow: row;
-  width: 100%; }
+  width: 95%; }
 
 .SeccionProductos div {
   width: 50%; }
 
 .SeccionProductos img {
   width: 300px;
-  height: 300px; }
+  height: 300px;
+  padding: 0px;
+  margin: 0px; }
 
+@media (max-width: 500px) {
+  .imagenProducto, .contenidoProducto {
+    width: 95%;
+    padding: 0%;
+    margin: 0%; }
+
+  .SeccionProductos {
+    width: 95%;
+    flex-direction: column; }
+
+  .SeccionProductos div {
+    width: 100%; }
+
+  .SeccionProductos img {
+    width: 100%;
+    height: 100%; } }
+@media (max-width: 1380px) {
+  .SeccionProductos img {
+    width: 200px !important;
+    height: 200px !important; } }
 /*Seccion CONTACTO*/
 #formulario {
-  font-family: 'Museo 300';
+  font-family: 'Pridi', serif;
   font-size: 1.2rem;
   border: 1px solid #009C08;
   justify-content: center; }
 
 #formulario div {
-  padding: 5px;
-  margin: 5px; }
+  padding: 0px;
+  margin: 0px; }
+
+.wapp {
+  font-family: 'Pridi', serif;
+  font-size: 2rem;
+  color: #ffffff;
+  background-color: #009C08;
+  padding: 10px;
+  margin: 10px;
+  justify-content: center; }
+
+div.wapp a {
+  text-decoration: none;
+  text-transform: none;
+  color: #ffffff; }
 
 /*SECCION TIPS BOTANICOS */
 .video {
-  padding: 20px;
-  margin: 20px;
   display: flex;
   flex-flow: row;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center; }
 
+.d-flex {
+  margin-left: 0px !important;
+  padding-left: 0px !important; }
+
+@media (max-width: 500px) {
+  .d-flex {
+    flex-direction: column;
+    padding: 0rem;
+    margin: 0rem;
+    flex-wrap: wrap; } }
 video {
-  max-width: 50%;
-  padding: 0 20px 20px 20px;
+  max-width: 33.3%;
+  padding: 20px;
   margin: 20px; }
 
+.flex-grow-1 {
+  padding: 10px;
+  margin: 10px; }
+
+.card-body {
+  display: flex;
+  flex-flow: row; }
+
+.card-body img p {
+  width: 50%; }
+
 .card-link {
-  font-family: "Museo 700";
+  font-family: 'Pridi', serif;
   color: #009C08;
   font-size: 1.2rem;
   text-transform: none;
@@ -227,7 +331,60 @@ video {
   color: black; }
 
 .card-body p, .flex-grow-1 p {
-  font-family: "Museo 700";
+  font-family: 'Pridi', serif;
   font-size: 1rem; }
+
+.imagen-contacto {
+  background-image: url(../media/BRONX.jpg);
+  background-position: center center;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  filter: opacity(90%); }
+
+.contenido-contacto {
+  background-color: #ffffff;
+  background-size: cover;
+  filter: opacity(80%);
+  margin: 20px;
+  padding: 20px; }
+
+.contenedor-anuncios p {
+  font-size: 1.8rem; }
+
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%; }
+
+.gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease; }
+
+.gallery .animation {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); }
+
+@media (max-width: 450px) {
+  .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%; } }
+@media (max-width: 400px) {
+  .btn.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem; } }
+.colorFondo {
+  background-color: #E4F8DF;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 30px; }
 
 /*# sourceMappingURL=estilos.css.map */

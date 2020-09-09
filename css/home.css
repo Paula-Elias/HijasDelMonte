@@ -6,6 +6,11 @@
   margin: 0 20px 20px 20px;
   justify-content: center; }
 
+@media (max-width: 500px) {
+  .fraseInspiradora {
+    font-size: 0.8rem;
+    padding: 1rem;
+    margin: 1rem; } }
 .producto img, .servicio img {
   filter: grayscale(1);
   transition: all .5s ease-in-out; }
@@ -13,6 +18,40 @@
 .producto img:hover, .servicio img:hover {
   filter: grayscale(0);
   transform: scale(1.1); }
+
+.carousel-caption {
+  filter: opacity(80%); }
+
+@media (max-width: 500px) {
+  .carousel-caption, .float, .my-float {
+    display: none; }
+
+  .d-flex {
+    flex-direction: column;
+    padding: 0rem;
+    margin: 0rem;
+    flex-wrap: wrap; } }
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100; }
+
+.float:hover {
+  text-decoration: none;
+  color: #25d366;
+  background-color: #fff; }
+
+.my-float {
+  margin-top: 16px; }
 
 /* Seccion Nosotros*/
 blockquote {

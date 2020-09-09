@@ -19,27 +19,27 @@ flex: 0 0 95%;
 
 .contenidoProducto p {
 background-color: #ffffff;
-background-size: cover;
+background-size: 95%;
 filter: opacity(70%);
 margin: 5px;
 padding: 5px;
 }
 
 .texto {
-    font-family: 'Museo 300';
-    font-size: 1.5rem; 
-    margin: 20px;
-padding: 20px;
+    font-family: 'Pridi', serif;
+    font-size: 1rem; 
+    margin: 15px;
+padding: 15px;
 justify-content: space-evenly;
 }
 
 
 .SeccionProductos {
-    padding: 20px;
-    margin: 20px;
+    padding: 15px;
+    margin: 15px;
     display: flex;
     flex-flow: row;
-    width: 100%;
+    width: 95%;
 }
 
 .SeccionProductos div {
@@ -49,4 +49,33 @@ justify-content: space-evenly;
 .SeccionProductos img {
     width: 300px; 
     height: 300px;
+   padding: 0px;
+   margin: 0px; 
 }
+
+@media (max-width:500px) {
+    .imagenProducto, .contenidoProducto {
+        width: 95%;
+        padding: 0%;
+    margin: 0%;
+}  
+  .SeccionProductos {
+        width: 95%;
+        flex-direction: column;
+}
+.SeccionProductos div {
+width: 100%;
+}
+.SeccionProductos img {
+    width: 100%; 
+    height: 100%;
+}
+}
+
+@media (max-width:1380px) {
+    .SeccionProductos img {
+        width: 200px !important;
+        height: 200px !important;
+
+
+}}

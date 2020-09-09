@@ -1,14 +1,15 @@
 .nav {
   justify-content: center; }
 
-.navegacion a:hover {
+.navegacion a:hover, .nav-link:hover {
+  color: #ffffff;
   background-color: #000000;
   text-transform: none;
   text-decoration: none; }
 
 /* NAVEGACION */
 .navegacion {
-  font-family: 'Museo 300';
+  font-family: 'Pridi', serif;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -19,13 +20,17 @@
   text-transform: none;
   padding: 10px; }
 
+@media (max-width: 600px) {
+  .navFooter {
+    display: none;
+    justify-content: center; } }
 footer a,
 .barraNavegacion2 a {
-  font-family: 'museo 300';
+  font-family: 'Pridi', serif;
   text-decoration: none;
   text-transform: none;
   color: white;
-  font-size: 1.0rem;
+  font-size: 1rem;
   background-color: #009C08;
   margin: 2px;
   padding: 8px; }
@@ -33,11 +38,11 @@ footer a,
 .iconos {
   text-decoration: none;
   text-transform: none;
-  margin: 3px;
-  padding: 6px;
-  font-family: "Museo 300";
-  color: #009C08;
-  font-size: 1.8rem;
+  margin: 1px;
+  padding: 1px;
+  font-family: 'Pridi', serif;
+  color: #ffffff;
+  font-size: 1.5rem;
   text-decoration: none;
   text-transform: none; }
 

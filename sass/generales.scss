@@ -13,15 +13,12 @@ html {
     src: local('Museo 300'), url('css/Museo300-Regular.woff') format('woff');
 }
 
-
 @font-face {
     font-family: 'Museo 700';
     font-style: normal;
     font-weight: normal;
     src: local('Museo 700'), url('css/Museo700-Regular.woff') format('woff');
 }
-
-
 
 /*globales*/
 
@@ -31,18 +28,29 @@ img {
     margin: 20px;
 }
 
+@media (max-width:500px)  {
+img {
+padding: 0%;
+margin: 0%; }
+
+h1, h2, h3, h4, h5 {
+    width: 100%;
+    padding: 0%;
+    margin: 0%; 
+}}
+
 h1 {
     font-family: 'Museo 700';
     font-size: 5rem !important;
     color: #009C08;
     text-decoration: none;
     text-transform: none;
-    padding: 20px;
-    margin: 20px;
+    padding: 15px;
+    margin: 10px;
 }
 
 h2 {
-    font-size: 2.0rem !important;
+    font-size: 3rem !important;
     font-family: 'Museo 700';
     color: #009C08;
     text-decoration: none;
@@ -53,12 +61,12 @@ h2 {
 
 h3 {
     font-family: 'Museo 700';
-    font-size: 2.5.0rem;
-    color: #FFFFFF;
+    font-size: 2rem;
+    color: #ffffff;
+    background-color: #009C08;
     text-decoration: none;
-    padding: 8px;
-    margin: 8px;
-    text-decoration: none;
+    padding: 6px;
+    margin: 6px;
     text-transform: none;
 }
 
@@ -72,8 +80,8 @@ h4 {
 }
 
 h5 {
-        font-family: 'Museo 700';
-        font-size: 1.8rem;
+    font-family: 'Pridi', serif;
+        font-size: 1.6rem;
         color: #009C08;
        background-color: #ffffff;
         padding: 10px;
@@ -83,19 +91,16 @@ h5 {
 .container-fluid {
     max-width: 95%;
     height: 95%;
-    padding: 10px;
-    margin: 10px;
     justify-content: space-between;
     text-align: center;
 }
 
-.nav {
-    justify-content: center;
+@media (max-width:500px) {
+    .container-fluid {
+max-width: 95%;
 }
 
+body {
+    max-width: 90%;
+} }
 
-.navegacion a:hover {
-    background-color: #000000;
-    text-transform: none;
-    text-decoration: none;
-}

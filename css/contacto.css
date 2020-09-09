@@ -1,12 +1,26 @@
 /*Seccion CONTACTO*/
 #formulario {
-  font-family: 'Museo 300';
+  font-family: 'Pridi', serif;
   font-size: 1.2rem;
   border: 1px solid #009C08;
   justify-content: center; }
 
 #formulario div {
-  padding: 5px;
-  margin: 5px; }
+  padding: 0px;
+  margin: 0px; }
+
+.wapp {
+  font-family: 'Pridi', serif;
+  font-size: 2rem;
+  color: #ffffff;
+  background-color: #009C08;
+  padding: 10px;
+  margin: 10px;
+  justify-content: center; }
+
+div.wapp a {
+  text-decoration: none;
+  text-transform: none;
+  color: #ffffff; }
 
 /*# sourceMappingURL=contacto.css.map */
