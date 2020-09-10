@@ -6,20 +6,6 @@ html {
   }
 
 
-@font-face {
-    font-family: 'Museo 300';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Museo 300'), url('css/Museo300-Regular.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Museo 700';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Museo 700'), url('css/Museo700-Regular.woff') format('woff');
-}
-
 /*globales*/
 
 img {
@@ -40,8 +26,8 @@ h1, h2, h3, h4, h5 {
 }}
 
 h1 {
-    font-family: 'Museo 700';
-    font-size: 5rem !important;
+    font-family: 'Acme', sans-serif;
+    font-size: 6rem !important;
     color: #009C08;
     text-decoration: none;
     text-transform: none;
@@ -51,7 +37,7 @@ h1 {
 
 h2 {
     font-size: 3rem !important;
-    font-family: 'Museo 700';
+    font-family: 'Acme', sans-serif;
     color: #009C08;
     text-decoration: none;
     text-transform: none;
@@ -60,7 +46,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Museo 700';
+    font-family: 'Acme', sans-serif;
     font-size: 2rem;
     color: #ffffff;
     background-color: #009C08;
@@ -71,7 +57,7 @@ h3 {
 }
 
 h4 {
-    font-family: 'Museo 700';
+    font-family: 'Acme', sans-serif;
     font-size: 1.8rem;
     color: #009C08;
    background-color: #ffffff;
@@ -80,7 +66,7 @@ h4 {
 }
 
 h5 {
-    font-family: 'Pridi', serif;
+    font-family: 'Bree Serif', serif;
         font-size: 1.6rem;
         color: #009C08;
        background-color: #ffffff;

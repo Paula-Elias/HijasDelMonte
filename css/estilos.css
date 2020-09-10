@@ -9,7 +9,7 @@
 
 /* NAVEGACION */
 .navegacion {
-  font-family: 'Pridi', serif;
+  font-family: 'Averia Sans Libre', cursive;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -26,7 +26,7 @@
     justify-content: center; } }
 footer a,
 .barraNavegacion2 a {
-  font-family: 'Pridi', serif;
+  font-family: 'Averia Sans Libre', cursive;
   text-decoration: none;
   text-transform: none;
   color: white;
@@ -40,7 +40,7 @@ footer a,
   text-transform: none;
   margin: 1px;
   padding: 1px;
-  font-family: 'Pridi', serif;
+  font-family: 'Averia Sans Libre', cursive;
   color: #ffffff;
   font-size: 1.5rem;
   text-decoration: none;
@@ -52,16 +52,6 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
-@font-face {
-  font-family: 'Museo 300';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Museo 300"), url("css/Museo300-Regular.woff") format("woff"); }
-@font-face {
-  font-family: 'Museo 700';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Museo 700"), url("css/Museo700-Regular.woff") format("woff"); }
 /*globales*/
 img {
   max-width: 100%;
@@ -78,8 +68,8 @@ img {
     padding: 0%;
     margin: 0%; } }
 h1 {
-  font-family: 'Museo 700';
-  font-size: 5rem !important;
+  font-family: 'Acme', sans-serif;
+  font-size: 6rem !important;
   color: #009C08;
   text-decoration: none;
   text-transform: none;
@@ -88,7 +78,7 @@ h1 {
 
 h2 {
   font-size: 3rem !important;
-  font-family: 'Museo 700';
+  font-family: 'Acme', sans-serif;
   color: #009C08;
   text-decoration: none;
   text-transform: none;
@@ -96,7 +86,7 @@ h2 {
   margin: 10px; }
 
 h3 {
-  font-family: 'Museo 700';
+  font-family: 'Acme', sans-serif;
   font-size: 2rem;
   color: #ffffff;
   background-color: #009C08;
@@ -106,7 +96,7 @@ h3 {
   text-transform: none; }
 
 h4 {
-  font-family: 'Museo 700';
+  font-family: 'Acme', sans-serif;
   font-size: 1.8rem;
   color: #009C08;
   background-color: #ffffff;
@@ -114,7 +104,7 @@ h4 {
   margin: 10px; }
 
 h5 {
-  font-family: 'Pridi', serif;
+  font-family: 'Bree Serif', serif;
   font-size: 1.6rem;
   color: #009C08;
   background-color: #ffffff;
@@ -135,6 +125,7 @@ h5 {
     max-width: 90%; } }
 /** Main **/
 .fraseInspiradora {
+  font-family: 'Averia Sans Libre', cursive;
   font-size: 1.6rem;
   font-style: italic;
   padding: 0 20px 20px 20px;
@@ -195,6 +186,9 @@ blockquote {
   margin: 20px;
   border-radius: 2rem; }
 
+.textoNosotros {
+  font-family: 'Averia Sans Libre', cursive; }
+
 /* Seccion PRODUCTOS*/
 .imagenProducto {
   background-image: url(../media/living\ 2\ PS.png);
@@ -205,7 +199,7 @@ blockquote {
   align-items: center; }
 
 .contenidoProducto {
-  font-family: 'Museo 700';
+  font-family: 'Acme', sans-serif;
   font-size: 1.8rem;
   flex: 0 0 95%;
   color: #009C08;
@@ -263,7 +257,7 @@ blockquote {
     height: 200px !important; } }
 /*Seccion CONTACTO*/
 #formulario {
-  font-family: 'Pridi', serif;
+  font-family: 'Bree Serif', serif;
   font-size: 1.2rem;
   border: 1px solid #009C08;
   justify-content: center; }
@@ -273,7 +267,7 @@ blockquote {
   margin: 0px; }
 
 .wapp {
-  font-family: 'Pridi', serif;
+  font-family: 'Bree Serif', serif;
   font-size: 2rem;
   color: #ffffff;
   background-color: #009C08;

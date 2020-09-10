@@ -8,7 +8,7 @@
   align-items: center; }
 
 .contenidoProducto {
-  font-family: 'Museo 700';
+  font-family: 'Acme', sans-serif;
   font-size: 1.8rem;
   flex: 0 0 95%;
   color: #009C08;
